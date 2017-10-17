@@ -1,5 +1,5 @@
 name: faircoin-cvn
-version: v2.0.0
+version: git
 summary: promoting equality and a fair economy
 description: |
   FairCoin is the monetary base system for FairCoop.
@@ -26,7 +26,7 @@ parts:
   faircoin:
     source: https://github.com/faircoin/faircoin/
     source-type: git
-    source-tag: v2.0.0
+    source-tag: master
     plugin: autotools
     configflags: [--disable-tests, --disable-bench, --with-incompatible-bdb, --with-gui=qt4, --with-cvn]
     # XXX We don't want to copy the full blockchain every time that the snap is
